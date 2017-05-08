@@ -1,0 +1,2 @@
+DEBUG: Actor created with ID: 0
+DEBUG: Actor created with ID: 1
