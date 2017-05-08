@@ -18,7 +18,8 @@ void Engine::Init()
 	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
 	while (!TCODConsole::isWindowClosed()) {
 		TCOD_key_t key;
-		TCOD_event_t ev = TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS, &key, nullptr); //event type, key pointer, mouse pointer
+		TCOD_mouse_t mouse;
+		TCOD_event_t ev = TCODSystem::checkForEvent(TCOD_EVENT_ANY, &key, &mouse); //event type, key pointer, mouse pointer
 		TCODConsole::root->clear();
 		TCODConsole::root->putChar(40, 25, '@');
 		TCODConsole::flush();
