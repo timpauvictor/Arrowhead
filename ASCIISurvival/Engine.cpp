@@ -10,6 +10,7 @@ Engine::Engine(Logger *l)
 
 Engine::~Engine()
 {
+
 }
 
 void Engine::Init()
@@ -30,11 +31,5 @@ void Engine::Log(std::string t)
 	logger->log(t);
 }
 
-int Engine::sendToHandler(TCOD_event_t event, TCOD_key_t key)
-{
-	if (event == TCOD_EVENT_KEY_PRESS && key.c == 'w') 
-	{
-		//player moveup
-	}
-}
+
 
