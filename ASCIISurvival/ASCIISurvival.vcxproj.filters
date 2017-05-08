@@ -36,6 +36,9 @@
     <ClInclude Include="Logger.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
+    <ClInclude Include="InventoryComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -49,6 +52,9 @@
     </ClCompile>
     <ClCompile Include="Logger.cpp">
       <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Components.h">
+      <Filter>Header Files\Components</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
