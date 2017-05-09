@@ -25,7 +25,7 @@ Event * EventBox::getNewest()
 {
 	Event* toReturn = events.at(events.size());
 	events.erase(events.end(), events.end());
-	logger->log("Newest event taken, " + std::to_string(events.size()) + " events left", 4);
+	logger->log("Newest event taken, " + std::to_string(events.size()) + " events left", 3);
 	return toReturn;
 }
 
