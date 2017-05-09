@@ -1,35 +1,63 @@
 #include "Engine.h"
 #include "libtcod.hpp"
+#include "Handler.h"
 
 int Engine::xRes = 100;
 int Engine::yRes = 50;
 
-Engine::Engine(Logger *l)
+Engine::Engine(Logger *l, Handler *h)
 {
 	logger = l;
+	handler = h;
 }
 
 Engine::~Engine()
 {
+	
 }
 
 void Engine::Init()
 {
 	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
+	player = makeActor(10, 10, '@', TCODColor::chartreuse);
+	logger->log("Created player with ID: " + std::to_string(player->getID()), 2);
 	while (!TCODConsole::isWindowClosed()) {
-		TCOD_key_t key;
-		TCOD_mouse_t mouse;
-		TCOD_event_t ev = TCODSystem::checkForEvent(TCOD_EVENT_ANY, &key, &mouse); //event type, key pointer, mouse pointer
+		handler->tick();
 		TCODConsole::root->clear();
-		TCODConsole::root->putChar(40, 25, '@');
+		render();
 		TCODConsole::flush();
 	}
 }
 
-void Engine::Log(std::string t)
+Actor * Engine::makeActor(int i, int i1, char c, TCODColor col)
 {
-	logger->log(t);
+	Actor a(i, i1, c, col);
+	_actors.push_back(a);
+	logger->log("Created new actor with ID: " + std::to_string(a.getID()), 2);
+	return &a;
 }
 
+void Engine::render()
+{
+	renderActors();
+}
+
+void Engine::renderActors()
+{
+	int x;
+	int y;
+	char c;
+	TCODColor col;
+	for (int i = 0; i < _actors.size(); i++)
+	{
+		x =   _actors.at(i).getPosX();
+		y =   _actors.at(i).getPosY();
+		c =	  _actors.at(i).getChar();
+		col = _actors.at(i).getColor();
+
+		TCODConsole::root->putChar(x, y, c);
+		TCODConsole::root->setCharForeground(x, y, col);
+	}
+}
 
 

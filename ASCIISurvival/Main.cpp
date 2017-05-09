@@ -1,11 +1,11 @@
 #include "libtcod.hpp"
 #include "Engine.h"
-//#include "Handler.h"
+#include "Handler.h"
 
 int main() {
 	Logger l("log.txt");
-	//Handler h;
-	Engine game(&l);
+	Handler h(&l);
+	Engine game(&l, &h);
 	game.Init();
 
 	return 0;

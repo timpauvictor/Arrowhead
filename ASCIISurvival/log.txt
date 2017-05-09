@@ -1,0 +1,7 @@
+ENGINE: Created new actor with ID: 0
+ENGINE: Created player with ID: 0
+HANDLER: W pressed
+HANDLER: W pressed
+HANDLER: W pressed
+HANDLER: W pressed
+HANDLER: W pressed

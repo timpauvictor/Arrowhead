@@ -128,8 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor.cpp" />
-    <ClCompile Include="Components.h" />
+    <ClCompile Include="Component.h" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Handler.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>

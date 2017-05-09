@@ -1,8 +1,8 @@
 #pragma once
-#include "Components.h"
+#include "Component.h"
 #include <vector>
 
-class InventoryComponent: public Components
+class InventoryComponent: public Component
 {
 	//std::vector<Item> items;
 
