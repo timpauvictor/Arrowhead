@@ -130,6 +130,8 @@
     <ClCompile Include="Actor.cpp" />
     <ClCompile Include="Component.h" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventBox.cpp" />
     <ClCompile Include="Handler.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -141,6 +143,7 @@
     <ClInclude Include="Handler.h" />
     <ClInclude Include="InventoryComponent.h" />
     <ClInclude Include="Logger.h" />
+    <ClInclude Include="EventBox.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

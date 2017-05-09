@@ -2,16 +2,18 @@
 #include "libtcod.hpp"
 #include "Event.h"
 #include "Logger.h"
+#include "EventBox.h"
 
 
 class Handler
 {
 public:
-	Handler(Logger* l);
+	Handler(Logger* l, EventBox* e);
 	~Handler();
 	void Handler::tick();
 private:
 	Logger* logger;
-	void Translate(TCOD_event_t * e, TCOD_key_t * key, TCOD_mouse_t * mouse);
+	EventBox* eb;
+	void Translate(TCOD_event_t * ev, TCOD_key_t * key, TCOD_mouse_t * mouse);
 	void Handler::Dispatch(Event* e);
 };

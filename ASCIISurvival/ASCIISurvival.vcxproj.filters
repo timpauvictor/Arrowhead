@@ -45,6 +45,9 @@
     <ClInclude Include="Event.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
+    <ClInclude Include="EventBox.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -63,6 +66,12 @@
       <Filter>Header Files\Components</Filter>
     </ClCompile>
     <ClCompile Include="Handler.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="EventBox.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
       <Filter>Source Files\Util</Filter>
     </ClCompile>
   </ItemGroup>
