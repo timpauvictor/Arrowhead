@@ -9,7 +9,7 @@ Event::Event(eventType newT, char c)
 
 eventType Event::getType() { return t; }
 
-char Event::getKeyDown() { return keyDown; }
+char Event::getKey() { return keyDown; }
 
 int Event::getID()
 {

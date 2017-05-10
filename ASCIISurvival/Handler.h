@@ -15,5 +15,4 @@ private:
 	Logger* logger;
 	EventBox* eb;
 	void Translate(TCOD_event_t * ev, TCOD_key_t * key, TCOD_mouse_t * mouse);
-	void Handler::Dispatch(Event* e);
 };

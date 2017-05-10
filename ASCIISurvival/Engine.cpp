@@ -33,27 +33,31 @@ void Engine::Init()
 
 void Engine::update()
 {
-	doEvent(eb->getOldest());
+	if (eb->getSize() > 0)
+	{
+		doEvent(eb->getOldest());
+	}	
 }
 
-void Engine::doEvent(Event* e)
+void Engine::doEvent(Event e)
 {
-	if (e == nullptr)
+	if (e.getType() == keyPress)
 	{
-		//do nothing
-	} else
-	{
-		char c = e->getKeyDown();
-		if (c == 'w')
+		switch (e.getKey())
 		{
-			checkPlayerMovement(1, 0);
+		case 'w':
+			checkPlayerMovement(0, -1);
+			break;
+		case 's':
+			checkPlayerMovement(0, 1);
+			break;
 		}
 	}
+	//else if ()
 }
 
 int Engine::checkPlayerMovement(int dx, int dy)
 {
-
 	movePlayer(dx, dy);
 	return 1;
 }

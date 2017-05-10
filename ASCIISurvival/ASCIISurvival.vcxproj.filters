@@ -42,10 +42,10 @@
     <ClInclude Include="Handler.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
-    <ClInclude Include="Event.h">
+    <ClInclude Include="EventBox.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
-    <ClInclude Include="EventBox.h">
+    <ClInclude Include="Event.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
   </ItemGroup>

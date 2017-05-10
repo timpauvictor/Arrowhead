@@ -20,7 +20,7 @@ private:
 	void Engine::renderActors();
 	void Engine::render();
 	void Engine::update();
-	void Engine::doEvent(Event* e);
+	void Engine::doEvent(Event e);
 	int Engine::checkPlayerMovement(int dx, int dy);
 	void Engine::movePlayer(int dx, int dy);
 	Logger* logger;
