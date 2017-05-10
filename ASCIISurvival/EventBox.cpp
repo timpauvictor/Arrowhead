@@ -3,11 +3,12 @@
 EventBox::EventBox(Logger* l)
 {
 	logger = l;
+	l->log("EventBox initialized successfully");
 }
 
 EventBox::~EventBox()
 {
-
+	logger = nullptr;
 }
 
 int EventBox::getSize()

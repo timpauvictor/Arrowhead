@@ -32,9 +32,12 @@ Handler::Handler(Logger* l, EventBox* e)
 {
 	logger = l;
 	eb = e;
+	logger->log("Event handler initalized successfully");
 }
 
 Handler::~Handler()
 {
+	logger = nullptr;
+	eb = nullptr;
 }
 

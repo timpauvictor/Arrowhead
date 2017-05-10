@@ -14,13 +14,16 @@ Engine::Engine(Logger *l, Handler *h, EventBox *e)
 
 Engine::~Engine()
 {
-	
+	logger = nullptr;
+	handler = nullptr;
+	eb = nullptr;
 }
 
 void Engine::Init()
 {
+
 	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
-	player = makeActor(10, 10, '@', TCODColor::chartreuse);
+	player = makeActor(10, 10, '@', TCODColor::white);
 	logger->log("Created player with ID: " + std::to_string(player->getID()), 2);
 	while (!TCODConsole::isWindowClosed()) {
 		handler->tick();
@@ -51,6 +54,12 @@ void Engine::doEvent(Event e)
 		case 's':
 			checkPlayerMovement(0, 1);
 			break;
+		case 'a':
+			checkPlayerMovement(-1, 0);
+			break;
+		case 'd':
+			checkPlayerMovement(1, 0);
+			break;
 		}
 	}
 	//else if ()
@@ -58,17 +67,20 @@ void Engine::doEvent(Event e)
 
 int Engine::checkPlayerMovement(int dx, int dy)
 {
+	logger->log("Satisfying movement event");
+	if ((player->getPosX() + dx) < 0)        { return 0; } //going above the screen
+	if ((player->getPosX() + dx) > xRes - 1) { return 0; } //going below the screen
+	if ((player->getPosY() + dy) < 0)        { return 0; }
+	if ((player->getPosY() + dy) > yRes - 1) { return 0; }
+	//otherwise:
 	movePlayer(dx, dy);
 	return 1;
 }
 
 void Engine::movePlayer(int dx, int dy)
 {
-	//player = &(_actors.at(0));
-	logger->log("Moving player");
 	player->setPosX(player->getPosX() + dx);
 	player->setPosY(player->getPosY() + dy);
-	logger->log("New player position: (" + std::to_string(player->getPosX()) + ", " + std::to_string(player->getPosY()) + ")");
 }
 
 void Engine::render()

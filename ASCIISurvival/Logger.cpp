@@ -3,6 +3,7 @@
 Logger::Logger(std::string fileName)
 {
 	myFile.open(fileName);
+	log("Logger initialized succesfully");
 }
 
 Logger::~Logger()
