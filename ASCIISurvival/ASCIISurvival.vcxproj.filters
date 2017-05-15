@@ -51,6 +51,12 @@
     <ClInclude Include="Generator.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
+    <ClInclude Include="UsableComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -75,6 +81,9 @@
       <Filter>Source Files\Util</Filter>
     </ClCompile>
     <ClCompile Include="Event.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
       <Filter>Source Files\Util</Filter>
     </ClCompile>
   </ItemGroup>
