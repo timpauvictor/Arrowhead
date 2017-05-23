@@ -88,7 +88,7 @@
       <SDLCheck>
       </SDLCheck>
       <PrecompiledHeader />
-      <AdditionalIncludeDirectories>C:\GameDev\Libraries\libtcod-msvs-x64\build\dependencies\include;C:\GameDev\Libraries\libtcod-msvs-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\GameDev\Libraries\libtcod-msvs-x64\build\msvs;C:\GameDev\Libraries\libtcod-msvs-x64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
     </ClCompile>
