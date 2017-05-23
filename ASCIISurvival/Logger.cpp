@@ -1,7 +1,8 @@
 #include "Logger.h"
 
-Logger::Logger(std::string fileName)
+Logger::Logger(std::string fileName, int iLevel)
 {
+	initLevel = iLevel;
 	myFile.open(fileName);
 	log("Logger initialized succesfully");
 }

@@ -57,6 +57,12 @@
     <ClInclude Include="GUI.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
+    <ClInclude Include="StatsComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonTypes.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

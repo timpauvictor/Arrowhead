@@ -1,9 +1,11 @@
 #include "Engine.h"
 #include "libtcod.hpp"
 #include "Handler.h"
+#include "Actor.h"
 
 int Engine::xRes = 100;
 int Engine::yRes = 50;
+
 
 Engine::Engine(Logger *l, Handler *h, EventBox *e)
 {
@@ -30,6 +32,7 @@ void Engine::Init()
 		TCODConsole::root->clear();
 		update();
 		render();
+		gui.render();
 		TCODConsole::flush();
 	}
 }
@@ -59,6 +62,8 @@ void Engine::doEvent(Event e)
 			break;
 		case 'd':
 			checkPlayerMovement(1, 0);
+			break;
+		default:
 			break;
 		}
 	}

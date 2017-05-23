@@ -4,6 +4,7 @@
 #include "Handler.h"
 #include "EventBox.h"
 #include <vector>
+#include "GUI.h"
 
 class Engine
 {
@@ -27,5 +28,6 @@ private:
 	Handler* handler;
 	EventBox* eb;
 	Actor* player;
+	GUI gui;
 	std::vector<Actor> _actors;
 };

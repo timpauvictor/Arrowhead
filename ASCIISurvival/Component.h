@@ -1,4 +1,7 @@
 ﻿class Component
 {
-	void Component::update();
+private:
+	int cID;
+public:
+//	virtual void Component::update();
 };

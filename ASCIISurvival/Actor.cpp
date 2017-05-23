@@ -25,4 +25,13 @@ void Actor::setPosY(int y) { posY = y; }
 TCODColor Actor::getColor() { return color; }
 void Actor::setColor(TCODColor c) { color = c; }
 
+//void Actor::update()
+//{
+////	for (Component e : _components)
+////	{
+//////		e.update();
+////	}
+//}
+
+
 
