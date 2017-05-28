@@ -240,3 +240,12 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+/include/
+/lib/
+libtcod_debug.so
+libtcod.so
+libtcodxx_debug.so
+libtcodxx.so
+makefile
+terminal.png
