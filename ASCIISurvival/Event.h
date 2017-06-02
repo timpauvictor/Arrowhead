@@ -2,7 +2,8 @@
 
 enum eventType
 {
-	keyPress
+	keyPress,
+	statUpdate
 };
 
 
