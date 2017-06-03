@@ -1,6 +1,6 @@
 #pragma once
 #include "libtcod.hpp"
-#include "Component.h"
+#include "Components.h"
 #include <vector>
 class Actor
 {

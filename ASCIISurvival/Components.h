@@ -3,7 +3,7 @@ class Actor;
 class Component
 {
 public:
-	virtual void update(Actor* a);
+	//virtual void update(Actor* a);
 };
 
 class StatsComponent: Component
@@ -11,5 +11,5 @@ class StatsComponent: Component
 private:
 
 public:
-	void update(Actor* a) override;
+	//void update(Actor* a) override;
 };

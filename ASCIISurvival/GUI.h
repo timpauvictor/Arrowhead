@@ -4,7 +4,7 @@
 class GUI
 {
 public:
-	GUI::GUI();
-	void GUI::render();
-	void GUI::update();
+	GUI();
+	void render();
+	void update();
 };

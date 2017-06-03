@@ -16,7 +16,7 @@ private:
 	int ID = nextID++;
 public:
 	Event(eventType newT, char c);
-	eventType Event::getType();
-	char Event::getKey();
-	int Event::getID();
+	eventType getType();
+	char getKey();
+	int getID();
 };

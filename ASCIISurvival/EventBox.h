@@ -6,12 +6,12 @@
 class EventBox
 {
 public:
-	EventBox::EventBox(Logger* l);
-	EventBox::~EventBox();
-	Event EventBox::getOldest();
-	Event EventBox::getNewest();
-	void EventBox::add(Event ev);
-	int EventBox::getSize();
+	EventBox(Logger* l);
+	~EventBox();
+	Event getOldest();
+	Event getNewest();
+	void add(Event ev);
+	int getSize();
 private:
 	std::vector<Event> events;
 	Logger* logger;

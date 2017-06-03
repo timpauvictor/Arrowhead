@@ -18,12 +18,12 @@ public:
 private:
 	Actor* makeActor(int i, int i1, char c, TCODColor col);
 	void Log(std::string t);
-	void Engine::renderActors();
-	void Engine::render();
-	void Engine::update();
-	void Engine::doEvent(Event e);
-	int Engine::checkPlayerMovement(int dx, int dy);
-	void Engine::movePlayer(int dx, int dy);
+	void renderActors();
+	void render();
+	void update();
+	void doEvent(Event e);
+	int checkPlayerMovement(int dx, int dy);
+	void movePlayer(int dx, int dy);
 	Logger* logger;
 	Handler* handler;
 	EventBox* eb;

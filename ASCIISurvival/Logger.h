@@ -13,5 +13,5 @@ class Logger
 public:
 	Logger(std::string fileName = "log.txt", int iLevel = 0);
 	~Logger();
-	void Logger::log(std::string toWrite, int level = 1);
+	void log(std::string toWrite, int level = 1);
 };

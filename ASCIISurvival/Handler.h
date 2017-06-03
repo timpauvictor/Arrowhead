@@ -10,7 +10,7 @@ class Handler
 public:
 	Handler(Logger* l, EventBox* e);
 	~Handler();
-	void Handler::tick();
+	void tick();
 private:
 	Logger* logger;
 	EventBox* eb;
