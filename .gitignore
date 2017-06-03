@@ -249,3 +249,5 @@ libtcodxx_debug.so
 libtcodxx.so
 makefile
 terminal.png
+log.txt
+exec

@@ -107,7 +107,7 @@ void Engine::renderActors()
 	int y;
 	char c;
 	TCODColor col;
-	for (int i = 0; i < _actors.size(); i++)
+	for (size_t i = 0; i < _actors.size(); i++)
 	{
 		x =   _actors.at(i).getPosX();
 		y =   _actors.at(i).getPosY();
