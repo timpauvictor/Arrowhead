@@ -23,11 +23,11 @@ Engine::~Engine()
 
 void Engine::Init()
 {
-
 	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
 	player = makeActor(10, 10, '@', TCODColor::white);
 	logger->log("Created player with ID: " + std::to_string(player->getID()), 2);
 	while (!TCODConsole::isWindowClosed()) {
+		player = &_actors.at(0);
 		handler->tick();
 		TCODConsole::root->clear();
 		update();
