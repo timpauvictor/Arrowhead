@@ -9,3 +9,6 @@ HANDLER: Oldest event taken, 0 events left
 HANDLER: 0 pressed
 HANDLER: Event added to box, 1 events total
 HANDLER: Oldest event taken, 0 events left
+HANDLER: 0 pressed
+HANDLER: Event added to box, 1 events total
+HANDLER: Oldest event taken, 0 events left
