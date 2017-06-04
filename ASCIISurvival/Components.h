@@ -9,7 +9,9 @@ public:
 class StatsComponent: Component
 {
 private:
-
+	int strength;
+	int dexterity;
+	int intell
 public:
 	//void update(Actor* a) override;
 };
