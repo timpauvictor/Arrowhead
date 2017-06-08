@@ -2,8 +2,11 @@ class Actor;
 
 class Component
 {
+private:
+	int cID;
+	int bID;
 public:
-	//virtual void update(Actor* a);
+//	virtual void update();
 };
 
 class StatsComponent: Component
@@ -11,7 +14,7 @@ class StatsComponent: Component
 private:
 	int strength;
 	int dexterity;
-	int intell
+	int intelligence;
 public:
-	//void update(Actor* a) override;
+//	void update() override;
 };
