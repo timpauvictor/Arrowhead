@@ -25,6 +25,9 @@ void Actor::setPosY(int y) { posY = y; }
 TCODColor Actor::getColor() { return color; }
 void Actor::setColor(TCODColor c) { color = c; }
 
+bool Actor::addComponent(Component c) {
+	
+}
 //void Actor::update()
 //{
 ////	for (Component e : _components)

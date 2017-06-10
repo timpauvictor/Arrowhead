@@ -26,4 +26,6 @@ public:
 //	void update();
 	TCODColor getColor();
 	void setColor(TCODColor c);
+	bool addComponent(Component c);
+	//int findComponent(compType c);
 };
