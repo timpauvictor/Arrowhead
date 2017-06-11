@@ -42,23 +42,6 @@ void Engine::update()
 	//TODO
 }
 
-void Engine::doEvent(Event e)
-{
-	//TODO
-}
-
-int Engine::checkPlayerMovement(int dx, int dy)
-{
-	logger->log("Satisfying movement event");
-	if ((player->getPosX() + dx) < 0)        { return 0; } //going above the screen
-	if ((player->getPosX() + dx) > xRes - 1) { return 0; } //going below the screen
-	if ((player->getPosY() + dy) < 0)        { return 0; }
-	if ((player->getPosY() + dy) > yRes - 1) { return 0; }
-	//otherwise:
-	movePlayer(dx, dy);
-	return 1;
-}
-
 void Engine::movePlayer(int dx, int dy)
 {
 	player->setPosX(player->getPosX() + dx);

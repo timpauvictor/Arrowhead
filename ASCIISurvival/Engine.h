@@ -21,7 +21,6 @@ private:
 	void renderActors();
 	void render();
 	void update();
-	void doEvent(Event e);
 	int checkPlayerMovement(int dx, int dy);
 	void movePlayer(int dx, int dy);
 	Logger* logger;
