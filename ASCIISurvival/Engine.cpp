@@ -39,35 +39,12 @@ void Engine::Init()
 
 void Engine::update()
 {
-	if (eb->getSize() > 0)
-	{
-		doEvent(eb->getOldest());
-	}	
+	//TODO
 }
 
 void Engine::doEvent(Event e)
 {
-	if (e.getType() == keyPress)
-	{
-		switch (e.getKey())
-		{
-		case 'w':
-			checkPlayerMovement(0, -1);
-			break;
-		case 's':
-			checkPlayerMovement(0, 1);
-			break;
-		case 'a':
-			checkPlayerMovement(-1, 0);
-			break;
-		case 'd':
-			checkPlayerMovement(1, 0);
-			break;
-		default:
-			break;
-		}
-	}
-	//else if ()
+	//TODO
 }
 
 int Engine::checkPlayerMovement(int dx, int dy)

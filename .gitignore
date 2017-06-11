@@ -241,6 +241,8 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 
+launch.json
+*.swp
 /include/
 /lib/
 libtcod_debug.so
