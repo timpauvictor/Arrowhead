@@ -1,7 +1,6 @@
 DEBUG: Logger initialized succesfully
 DEBUG: EventBox initialized successfully
 DEBUG: Event handler initalized successfully
-ENGINE: Created new actor with ID: 0
 ENGINE: Created player with ID: 0
 HANDLER: 0 pressed
 HANDLER: Event added to box, 1 events total

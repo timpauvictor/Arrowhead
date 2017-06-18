@@ -2,12 +2,9 @@
 int Actor::nextID;
 
 
-Actor::Actor(int x, int y, char newC, TCODColor col)
+Actor::Actor() 
 {
-	posX = x;
-	posY = y;
-	c = newC;
-	color = col;
+	//nothing!
 }
 
 Actor::~Actor()
@@ -22,19 +19,8 @@ int Actor::getPosX() { return posX; }
 void Actor::setPosX(int x) { posX = x; }
 int Actor::getPosY() { return posY; }
 void Actor::setPosY(int y) { posY = y; }
-TCODColor Actor::getColor() { return color; }
-void Actor::setColor(TCODColor c) { color = c; }
 
 bool Actor::addComponent(Component c) {
-	
+	_components.push_back(c);
+	return true;
 }
-//void Actor::update()
-//{
-////	for (Component e : _components)
-////	{
-//////		e.update();
-////	}
-//}
-
-
-

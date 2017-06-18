@@ -1,7 +1,8 @@
 #pragma once
-#include "libtcod.hpp"
+//#include "libtcod.hpp"
 #include "Components.h"
 #include <vector>
+#include "EventBox.h"
 class Actor
 {
 private:
@@ -10,11 +11,11 @@ private:
 	char c;
 	int posX;
 	int posY;
-	TCODColor color;
 	std::vector<Component> _components;
+	EventBox* eb;
 
 public:
-	Actor(int x, int y, char c, TCODColor col);
+	Actor();
 	~Actor();
 	int getID();
 	char getChar();
@@ -23,9 +24,7 @@ public:
 	void setPosX(int x);
 	int getPosY();
 	void setPosY(int y);
-//	void update();
-	TCODColor getColor();
-	void setColor(TCODColor c);
+	void update();
 	bool addComponent(Component c);
 	//int findComponent(compType c);
 };

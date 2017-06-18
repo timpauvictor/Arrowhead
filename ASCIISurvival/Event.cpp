@@ -1,17 +1,21 @@
 #include "Event.h"
-int Event::nextID;
 
-Event::Event(eventType newT, char c)
+Event::Event(eventType newT)
 {
 	t = newT;
-	keyDown = c;
 }
 
 eventType Event::getType() { return t; }
 
 char Event::getKey() { return keyDown; }
 
-int Event::getID()
-{
-	return ID;
+bool Event::addKey(char c) {
+	if (t == keyPress) 
+	{
+		keyDown = c;
+		return true;
+	} else 
+	{
+		return false;
+	}
 }

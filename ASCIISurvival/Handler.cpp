@@ -20,7 +20,8 @@ void Handler::Translate(TCOD_event_t* ev, TCOD_key_t* key = nullptr, TCOD_mouse_
 {
 	if (key)
 	{
-		Event e(keyPress, key->c);
+		Event e(keyPress);
+		e.addKey(key->c);
 		eb->add(e);
 	} else if (mouse)
 	{

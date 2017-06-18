@@ -245,11 +245,12 @@ launch.json
 *.swp
 /include/
 /lib/
+/buildx64/*.o
 libtcod_debug.so
 libtcod.so
 libtcodxx_debug.so
 libtcodxx.so
-makefile
+#makefile
 terminal.png
 log.txt
 exec

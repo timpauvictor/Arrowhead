@@ -12,11 +12,17 @@ class Event
 private:
 	eventType t;
 	char keyDown;
-	static int nextID;
-	int ID = nextID++;
+	int receiverID;
+	int senderID;
 public:
-	Event(eventType newT, char c);
+	Event(eventType newT);
 	eventType getType();
+
 	char getKey();
-	int getID();
+	bool addKey(char c);
+
+	int getRecieving();
+	int getSender();
+
+	
 };
