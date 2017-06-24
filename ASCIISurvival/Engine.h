@@ -16,13 +16,9 @@ public:
 	
 	void Init();
 private:
-	Actor* makeActor(int i, int i1, char c, TCODColor col);
-	void Log(std::string t);
 	void renderActors();
 	void render();
 	void update();
-	int checkPlayerMovement(int dx, int dy);
-	void movePlayer(int dx, int dy);
 	Logger* logger;
 	Handler* handler;
 	EventBox* eb;

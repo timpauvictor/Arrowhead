@@ -1,6 +1,4 @@
 #include "Engine.h"
-//#include "Handler.h"
-//#include "EventBox.h"
 
 int main() {
 	Logger l("log.txt");

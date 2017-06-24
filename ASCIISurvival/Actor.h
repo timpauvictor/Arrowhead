@@ -24,7 +24,6 @@ public:
 	void setPosX(int x);
 	int getPosY();
 	void setPosY(int y);
-	void update();
 	bool addComponent(Component c);
 	//int findComponent(compType c);
 };

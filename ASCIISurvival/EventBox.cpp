@@ -16,7 +16,7 @@ int EventBox::getSize()
 	return events.size();
 }
 
-Event EventBox::getOldest()
+Event EventBox::getOldest(int id)
 {
 	Event toReturn = events.at(0);
 	events.erase(events.begin(), events.begin()+1);
@@ -25,7 +25,7 @@ Event EventBox::getOldest()
 	return toReturn;	
 }
 
-Event EventBox::getNewest()
+Event EventBox::getNewest(int id)
 {
 	Event toReturn = events.at(events.size());
 	events.erase(events.end(), events.end());

@@ -8,8 +8,8 @@ class EventBox
 public:
 	EventBox(Logger* l);
 	~EventBox();
-	Event getOldest();
-	Event getNewest();
+	Event getOldest(int id);
+	Event getNewest(int id);
 	void add(Event ev);
 	int getSize();
 private:
