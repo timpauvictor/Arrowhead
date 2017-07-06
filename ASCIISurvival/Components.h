@@ -1,12 +1,23 @@
 #include "EventBox.h"
 
+enum ComponentType
+{
+	Stats,
+	Keyboard,
+	Location,
+	GraphicsComponent
+};
+
+
 class Component
 {
 private:
 	int cID;
+	ComponentType cType;
 public:
-//	virtual void update();
+	virtual void update();
 	int getID();
+	ComponentType getType();
 };
 
 //class StatsComponent: public Component //storing stats for everything
