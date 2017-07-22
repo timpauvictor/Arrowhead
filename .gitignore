@@ -245,7 +245,7 @@ launch.json
 *.swp
 /include/
 /lib/
-/buildx64/*.o
+/buildx64/
 libtcod_debug.so
 libtcod.so
 libtcodxx_debug.so

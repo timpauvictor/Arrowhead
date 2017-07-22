@@ -44,7 +44,7 @@ void Engine::update()
 
 void Engine::render()
 {
-	for (int i = 0; i < _actors.size(); i++)
+	for (size_t i = 0; i < _actors.size(); i++)
 	{
 //		if (Component c = _actors.at(i).hasComponent(Graphics));
 	}
