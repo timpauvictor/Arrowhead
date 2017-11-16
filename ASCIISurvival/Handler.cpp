@@ -1,5 +1,4 @@
 #include "Handler.h"
-#include "libtcod.hpp"
 #include "Logger.h"
 #include "Event.h"
 

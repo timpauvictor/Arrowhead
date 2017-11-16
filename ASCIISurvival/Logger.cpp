@@ -3,7 +3,7 @@
 Logger::Logger(std::string fileName, int iLevel)
 {
 	initLevel = iLevel;
-	myFile.open(fileName);
+	myFile.open(fileName.c_str());
 	log("Logger initialized succesfully");
 }
 

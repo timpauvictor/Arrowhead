@@ -1,7 +1,4 @@
 #include "Engine.h"
-#include "libtcod.hpp"
-#include "Handler.h"
-#include "Actor.h"
 
 int Engine::xRes = 100;
 int Engine::yRes = 50;
@@ -37,7 +34,7 @@ void Engine::Init()
 
 void Engine::update()
 {
-	//TODO
+	
 }
 
 

@@ -1,5 +1,4 @@
 #pragma once
-//#include "libtcod.hpp"
 #include "Components.h"
 #include <vector>
 #include "EventBox.h"

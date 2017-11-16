@@ -1,11 +1,12 @@
 #include "EventBox.h"
+#include "../include/libtcod.hpp"
 
 enum ComponentType
 {
 	Stats,
 	Keyboard,
 	Location,
-	GraphicsComponent
+	Graphics
 };
 
 
@@ -16,32 +17,21 @@ private:
 	ComponentType cType;
 public:
 	virtual void update();
-	int getID();
-	ComponentType getType();
+	virtual int getID();
+	virtual ComponentType getType();
 };
 
-//class StatsComponent: public Component //storing stats for everything
-//{
-//private:
-//	int strength;
-//	int dexterity;
-//	int intelligence;
-//public:
-//	void update() override;
-//};
+class geoBlock: public Component
+{
+	private:
+		int location[2];
+	public:
+		int* getCoords();
+};
 
-//class KeyBoardComponent: public Component
-//{
-//	public:
-//		void update() override;
-//};
+class grfxBlock: public Component {
+	private:
+		char sprite;
+};
 
-//class LocationComponponent: public Component 
-//{
 
-//}
-
-//class GraphicsComponent: public Component
-//{
-	
-//}

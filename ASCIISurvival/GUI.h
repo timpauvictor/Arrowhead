@@ -1,5 +1,5 @@
 #pragma once
-#include "libtcod.hpp"
+#include "../include/libtcod.hpp"
 
 class GUI
 {

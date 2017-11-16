@@ -1,5 +1,5 @@
 #pragma once
-#include "libtcod.hpp"
+#include "../include/libtcod.hpp"
 #include "Event.h"
 #include "Logger.h"
 #include "EventBox.h"

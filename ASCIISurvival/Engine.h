@@ -1,4 +1,5 @@
 #pragma once
+#include "../include/libtcod.hpp"
 #include "Actor.h"
 #include "Logger.h"
 #include "Handler.h"
@@ -13,12 +14,11 @@ public:
 	static int yRes;
 	Engine(Logger* l, Handler* h, EventBox* e);
 	~Engine();
-	
 	void Init();
 private:
-	void renderActors();
-	void render();
 	void update();
+	void render();
+	void renderActors();
 	Logger* logger;
 	Handler* handler;
 	EventBox* eb;
