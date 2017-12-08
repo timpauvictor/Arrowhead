@@ -1,3 +1,1 @@
-What happens in an update?
-	- check for events where (receiverID == this.getID())
-	- do the events
+
