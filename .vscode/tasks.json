@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "command": "make",
     "options":{
-        "cwd": "${workspaceRoot}/buildx64"
+        "cwd": "${workspaceRoot}/x64"
     },
     "isShellCommand": true,
     "showOutput": "always",

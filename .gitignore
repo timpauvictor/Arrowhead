@@ -241,11 +241,4 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 
-launch.json
-*.swp
-/include/
-/lib/
-/buildx64/*.o
-/buildx64/*.so
-/buildx64/log.txt
-/buildx64/game
+/x64/

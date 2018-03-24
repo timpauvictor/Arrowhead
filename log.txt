@@ -1,7 +1,0 @@
-DEBUG: Logger initialized succesfully
-DEBUG: EventBox initialized successfully
-DEBUG: Event handler initalized successfully
-HANDLER: 0 pressed
-HANDLER: Event added to box, 1 events total
-HANDLER: 0 pressed
-HANDLER: Event added to box, 2 events total

@@ -19,6 +19,7 @@ private:
 	void update();
 	void render();
 	void renderActors();
+	Actor initPlayer();
 	Logger* logger;
 	Handler* handler;
 	EventBox* eb;

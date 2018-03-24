@@ -1,3 +1,0 @@
-DEBUG: Logger initialized succesfully
-DEBUG: EventBox initialized successfully
-DEBUG: Event handler initalized successfully
