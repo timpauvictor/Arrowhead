@@ -2,7 +2,6 @@
 #include <string>
 #include <fstream>
 
-
 class Logger
 {
 	std::string filePath;

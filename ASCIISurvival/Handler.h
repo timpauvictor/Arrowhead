@@ -4,7 +4,6 @@
 #include "Logger.h"
 #include "EventBox.h"
 
-
 class Handler
 {
 public:
@@ -12,7 +11,7 @@ public:
 	~Handler();
 	void tick();
 private:
-	Logger* logger;
+	Logger * logger;
 	EventBox* eb;
 	void Translate(TCOD_event_t * ev, TCOD_key_t * key, TCOD_mouse_t * mouse);
 };

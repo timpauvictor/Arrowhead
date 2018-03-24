@@ -6,7 +6,6 @@ enum eventType
 	statUpdate
 };
 
-
 class Event
 {
 private:
@@ -23,6 +22,4 @@ public:
 
 	int getRecieving();
 	int getSender();
-
-	
 };

@@ -10,11 +10,12 @@ eventType Event::getType() { return t; }
 char Event::getKey() { return keyDown; }
 
 bool Event::addKey(char c) {
-	if (t == keyPress) 
+	if (t == keyPress)
 	{
 		keyDown = c;
 		return true;
-	} else 
+	}
+	else
 	{
 		return false;
 	}

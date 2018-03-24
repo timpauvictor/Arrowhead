@@ -19,10 +19,10 @@ int EventBox::getSize()
 Event EventBox::getOldest(int id)
 {
 	Event toReturn = events.at(0);
-	events.erase(events.begin(), events.begin()+1);
+	events.erase(events.begin(), events.begin() + 1);
 	events.shrink_to_fit();
 	logger->log("Oldest event taken, " + std::to_string(events.size()) + " events left", 3);
-	return toReturn;	
+	return toReturn;
 }
 
 Event EventBox::getNewest(int id)

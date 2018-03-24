@@ -12,7 +12,6 @@ void Handler::tick()
 		logger->log(std::to_string(key.c) + " pressed", 3);
 		Translate(&ev, &key, nullptr);
 	}
-	
 }
 
 void Handler::Translate(TCOD_event_t* ev, TCOD_key_t* key = nullptr, TCOD_mouse_t* mouse = nullptr)
@@ -22,9 +21,9 @@ void Handler::Translate(TCOD_event_t* ev, TCOD_key_t* key = nullptr, TCOD_mouse_
 		Event e(keyPress);
 		e.addKey(key->c);
 		eb->add(e);
-	} else if (mouse)
+	}
+	else if (mouse)
 	{
-		
 	}
 }
 
@@ -40,4 +39,3 @@ Handler::~Handler()
 	logger = nullptr;
 	eb = nullptr;
 }
-

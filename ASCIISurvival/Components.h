@@ -11,10 +11,9 @@ enum ComponentType
 
 struct statStruct
 {
-	int healthPoints, manaPoints,
-		strengthPoints, dexterityPoints, intelligencePoints, constitutionPoints;
+	char strengthPoints, dexterityPoints, intelligencePoints, constitutionPoints;
+	uint32_t healthPoints, manaPoints;
 };
-
 
 class Component
 {
@@ -32,31 +31,32 @@ class statBlock : public Component
 private:
 	statStruct stats;
 public:
-	void setSTR();
-	void getSTR();
-	void setINT();
-	void getINT();
-	void setDEX();
-	void getDEX();
-	void setCON();
-	void getCON();
-	void setHP();
-	void getHP();
-	void setMP();
-	void getMP();
+	statBlock();
+
+	void setZero();
+	void setSTR(char newStr);
+	char getSTR();
+	void setINT(char newInt);
+	char getINT();
+	void setDEX(char newDex);
+	char getDEX();
+	void setCON(char newCon);
+	char getCON();
+	void setHP(uint32_t newHP);
+	uint32_t getHP();
+	void setMP(uint32_t newMP);
+	uint32_t getMP();
 };
 
-class geoBlock: public Component
+class geoBlock : public Component
 {
-	private:
-		int location[2];
-	public:
-		int* getCoords();
+private:
+	int location[2];
+public:
+	int* getCoords();
 };
 
-class grfxBlock: public Component {
-	private:
-		char sprite;
+class grfxBlock : public Component {
+private:
+	char sprite;
 };
-
-

@@ -4,7 +4,6 @@ TCODConsole *guiConsole = new TCODConsole(150, 8);
 
 GUI::GUI()
 {
-		
 }
 
 void GUI::render()
@@ -16,10 +15,6 @@ void GUI::render()
 	TCODConsole::flush();
 }
 
-
-
 void GUI::update()
 {
-	
 }
-

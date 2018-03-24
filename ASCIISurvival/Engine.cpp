@@ -20,7 +20,7 @@ Engine::~Engine()
 void Engine::Init()
 {
 	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
-	Actor* player = & initPlayer();
+	Actor* player = &initPlayer();
 	logger->log("Created player with ID: " + std::to_string(player->getID()), 2);
 	while (!TCODConsole::isWindowClosed()) {
 		handler->tick();
@@ -34,10 +34,9 @@ void Engine::Init()
 
 void Engine::update()
 {
-	
 }
 
-Actor Engine::initPlayer() 
+Actor Engine::initPlayer()
 {
 	Actor player;
 	statBlock stats;
@@ -49,15 +48,10 @@ void Engine::render()
 {
 	for (size_t i = 0; i < _actors.size(); i++)
 	{
-//		if (Component c = _actors.at(i).hasComponent(Graphics));
+		//		if (Component c = _actors.at(i).hasComponent(Graphics));
 	}
 }
 
-
-
 void Engine::renderActors()
 {
-
 }
-
-
