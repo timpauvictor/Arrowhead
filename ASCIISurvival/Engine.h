@@ -18,7 +18,8 @@ public:
 private:
 	void update();
 	void render();
-	void renderActors();
+	bool renderActors();
+	Component findComponentbyID(int findID);
 	Actor initPlayer();
 	Logger* logger;
 	Handler* handler;

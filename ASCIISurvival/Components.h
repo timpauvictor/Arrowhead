@@ -26,13 +26,25 @@ public:
 	virtual ComponentType getType();
 };
 
+class mvmtBlock : public Component {
+	private:
+		int location[2];
+	public:
+		mvmtBlock();
+		virtual void update();
+		virtual int getID();
+		int* getLoc();
+		bool setLoc(int* newLoc);
+		bool transform(int dx, int dy);
+};
+
 class statBlock : public Component
 {
 private:
 	statStruct stats;
 public:
 	statBlock();
-
+	virtual void update();
 	void setZero();
 	void setSTR(char newStr);
 	char getSTR();
@@ -48,13 +60,15 @@ public:
 	uint32_t getMP();
 };
 
-class geoBlock : public Component
-{
-private:
-	int location[2];
-public:
-	int* getCoords();
-};
+// class geoBlock : public Component
+// {
+// private:
+// 	int location[2];
+// public:
+// 	int* getCoords();
+// 	bool setCoords(int* newLoc);
+// 	bool transform(int dx, int dy);
+// };
 
 class grfxBlock : public Component {
 private:

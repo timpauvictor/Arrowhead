@@ -8,7 +8,7 @@ void Component::update()
 }
 
 statBlock::statBlock() {
-	setZero();
+	// setZero();
 }
 
 void statBlock::setZero() {
@@ -19,6 +19,12 @@ void statBlock::setZero() {
 	setHP(0);
 	setMP(0);
 }
+
+void statBlock::update() {
+	//check for events here
+}
+
+
 
 void statBlock::setSTR(char newStr) {
 	stats.strengthPoints = newStr;
