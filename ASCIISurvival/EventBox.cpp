@@ -11,7 +11,7 @@ EventBox::~EventBox()
 	logger = nullptr;
 }
 
-int EventBox::getSize()
+size_t EventBox::getSize()
 {
 	return events.size();
 }

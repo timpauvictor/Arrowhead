@@ -45,9 +45,6 @@
     <ClInclude Include="GUI.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
-    <ClInclude Include="CommonTypes.h">
-      <Filter>Header Files\Util</Filter>
-    </ClInclude>
     <ClInclude Include="Components.h">
       <Filter>Header Files</Filter>
     </ClInclude>

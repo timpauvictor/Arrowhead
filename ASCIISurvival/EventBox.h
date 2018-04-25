@@ -11,7 +11,7 @@ public:
 	Event getOldest(int id);
 	Event getNewest(int id);
 	void add(Event ev);
-	int getSize();
+	size_t getSize();
 private:
 	std::vector<Event> events;
 	Logger* logger;

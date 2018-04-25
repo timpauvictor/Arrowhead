@@ -25,4 +25,5 @@ public:
 	void setPosY(int y);
 	bool addComponent(Component c);
 	Component getComponent(ComponentType c);
+	Component getComponentByIndex(int index);
 };

@@ -54,6 +54,7 @@ public:
 	char getDEX();
 	void setCON(char newCon);
 	char getCON();
+	void setAll(char newStr, char newInt, char newDex, char newCon);
 	void setHP(uint32_t newHP);
 	uint32_t getHP();
 	void setMP(uint32_t newMP);

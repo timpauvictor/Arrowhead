@@ -1,4 +1,0 @@
-DEBUG: Logger initialized succesfully
-DEBUG: EventBox initialized successfully
-DEBUG: Event handler initalized successfully
-ENGINE: Created player with ID: 0

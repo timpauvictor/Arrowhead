@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include <memory>
 
 int Engine::xRes = 100;
 int Engine::yRes = 50;
@@ -20,8 +21,8 @@ Engine::~Engine()
 void Engine::Init()
 {
 	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
-	Actor player = initPlayer();
-	logger->log("Created player with ID: " + std::to_string(player.getID()), 2);
+	std::shared_ptr<Actor> player(&initPlayer());
+	logger->log("Created player with ID: " + std::to_string(player->getID()), 2);
 	while (!TCODConsole::isWindowClosed()) {
 		handler->tick();
 		TCODConsole::root->clear();
@@ -39,8 +40,9 @@ void Engine::update()
 Actor Engine::initPlayer()
 {
 	Actor player;
-	// statBlock stats;
-	// player.addComponent(stats);
+	statBlock stats;
+	stats.setAll(10, 10, 10, 10);
+	player.addComponent(stats);
 	return player;
 }
 
@@ -54,5 +56,5 @@ void Engine::render()
 
 bool Engine::renderActors()
 {
-
+	return true;
 }

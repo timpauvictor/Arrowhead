@@ -22,3 +22,8 @@ bool Actor::addComponent(Component c) {
 	_components.push_back(c);
 	return true;
 }
+
+Component Actor::getComponentByIndex(int index) {
+	return _components.at(index);
+}
+

@@ -50,6 +50,13 @@ void statBlock::setMP(uint32_t newMP) {
 	stats.manaPoints = newMP;
 }
 
+void statBlock::setAll(char newStr, char newInt, char newDex, char newCon) {
+	setSTR(newStr);
+	setINT(newInt);
+	setDEX(newDex);
+	setCON(newCon);
+}
+
 char statBlock::getSTR() {
 	return stats.strengthPoints;
 }
