@@ -15,6 +15,11 @@ struct statStruct
 	uint32_t healthPoints, manaPoints;
 };
 
+enum statTypes
+{
+	actorStrength, actorDexterity, actorIntelligence, actorConstitution
+};
+
 class Component
 {
 private:

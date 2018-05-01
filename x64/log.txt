@@ -1,0 +1,74 @@
+DEBUG: Logger initialized succesfully
+DEBUG: EventBox initialized successfully
+DEBUG: Event handler initalized successfully
+ENGINE: Created player with ID: 0
+HANDLER: 119 pressed
+HANDLER: Event added to box, 1 events total
+HANDLER: 119 pressed
+HANDLER: Event added to box, 2 events total
+HANDLER: 100 pressed
+HANDLER: Event added to box, 3 events total
+HANDLER: 100 pressed
+HANDLER: Event added to box, 4 events total
+HANDLER: 97 pressed
+HANDLER: Event added to box, 5 events total
+HANDLER: 97 pressed
+HANDLER: Event added to box, 6 events total
+HANDLER: 115 pressed
+HANDLER: Event added to box, 7 events total
+HANDLER: 115 pressed
+HANDLER: Event added to box, 8 events total
+HANDLER: 100 pressed
+HANDLER: Event added to box, 9 events total
+HANDLER: 100 pressed
+HANDLER: Event added to box, 10 events total
+HANDLER: 119 pressed
+HANDLER: Event added to box, 11 events total
+HANDLER: 119 pressed
+HANDLER: Event added to box, 12 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 13 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 14 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 15 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 16 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 17 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 18 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 19 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 20 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 21 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 22 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 23 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 24 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 25 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 26 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 27 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 28 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 29 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 30 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 31 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 32 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 33 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 34 events total
+HANDLER: 27 pressed
+HANDLER: Event added to box, 35 events total
