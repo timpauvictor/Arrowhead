@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <fstream>
+#define M_MIR 0
 
 class Logger
 {
@@ -12,5 +13,5 @@ class Logger
 public:
 	Logger(std::string fileName = "log.txt", int iLevel = 0);
 	~Logger();
-	void log(std::string toWrite, int level = 1);
+	int log(std::string toWrite, int level = 1, int mirror = 0);
 };

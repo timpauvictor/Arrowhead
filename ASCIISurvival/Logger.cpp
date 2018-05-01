@@ -3,17 +3,21 @@
 Logger::Logger(std::string fileName, int iLevel)
 {
 	initLevel = iLevel;
-	myFile.open(fileName.c_str());
+	filePath = fileName;
 	log("Logger initialized succesfully");
 }
 
 Logger::~Logger()
 {
-	myFile.close();
+	if (myFile.is_open()) 
+	{
+		myFile.close();
+	}
 }
 
-void Logger::log(std::string toWrite, int level)
+int Logger::log(std::string toWrite, int level, int mirror)
 {
+	myFile.open(filePath.c_str());
 	if (level == 1)
 	{
 		toWrite = "DEBUG: " + toWrite;
@@ -27,5 +31,18 @@ void Logger::log(std::string toWrite, int level)
 		toWrite = "HANDLER: " + toWrite;
 	}
 	toWrite.append("\n"); //next line after each write
-	myFile.write(toWrite.c_str(), toWrite.length());
+	try {
+		myFile.write(toWrite.c_str(), toWrite.length());
+	} catch (std::string e) {
+		std::printf(e.c_str());
+		return 1;
+	}
+	myFile.close();
+
+	if (mirror) 
+	{
+		toWrite = "MIR:" + toWrite;
+		std::printf(toWrite.c_str());
+	}
+	return 0;
 }
