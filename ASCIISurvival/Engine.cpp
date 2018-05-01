@@ -1,5 +1,6 @@
 #include "Engine.h"
 #include <memory>
+using std::shared_ptr;	
 
 int Engine::xRes = 100;
 int Engine::yRes = 50;
@@ -21,7 +22,7 @@ Engine::~Engine()
 void Engine::Init()
 {
 	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
-	std::shared_ptr<Actor> player(&initPlayer());
+	shared_ptr<Actor> player(&initPlayer());
 	logger->log("Created player with ID: " + std::to_string(player->getID()), 2);
 	while (!TCODConsole::isWindowClosed()) {
 		handler->tick();

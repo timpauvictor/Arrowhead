@@ -240,8 +240,3 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
-
-/x64/Debug
-/x64/DebugLinux
-/x64/game
-/x64/log.txt
