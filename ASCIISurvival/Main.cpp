@@ -1,11 +1,10 @@
+
+#pragma comment(linker, "/SUBSYSTEM:CONSOLE")
 #include "Engine.h"
 
-
 int main() {
-	Logger l("log.txt");
-	EventBox eb(&l);
-	Handler h(&l, &eb);
-	Engine game(&l, &h, &eb);
+	Engine game;
+
 	game.Init();
 
 	return 0;

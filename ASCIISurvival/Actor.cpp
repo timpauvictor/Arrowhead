@@ -1,29 +1,24 @@
 #include "Actor.h"
-int Actor::nextID;
 
-Actor::Actor()
+Actor::Actor(int in_actorCount) 
 {
-	//nothing!
+	actorID = in_actorCount + 1;
+	parentID = -1;
 }
 
-Actor::~Actor()
-{
+Actor::Actor(int in_actorCount, int in_parentID) {
+	actorID = in_actorCount + 1;
+	parentID = in_parentID;
 }
 
-int Actor::getID() { return ID; }
-char Actor::getChar() { return c; }
-void Actor::setChar(char newC) { c = newC; }
-int Actor::getPosX() { return posX; }
-void Actor::setPosX(int x) { posX = x; }
-int Actor::getPosY() { return posY; }
-void Actor::setPosY(int y) { posY = y; }
-
-bool Actor::addComponent(Component c) {
-	_components.push_back(c);
-	return true;
+int Actor::getActorID() {
+	return actorID;
 }
 
-Component Actor::getComponentByIndex(int index) {
-	return _components.at(index);
+int Actor::getParentID() {
+	return parentID;
 }
 
+bool Actor::addComponent(Component in_comp) {
+
+}
