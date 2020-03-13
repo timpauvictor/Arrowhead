@@ -9,10 +9,6 @@ int actorCount = 0;
 
 Engine::Engine()
 {
-	using namespace std;
-	freopen("log.txt", "w", stdout);
-
-	cout << "Engine has started" << endl;
 	
 }
 
