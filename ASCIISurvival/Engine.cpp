@@ -19,7 +19,10 @@ Engine::~Engine()
 
 void Engine::Init()
 {
-	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
+	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false, TCOD_RENDERER_SDL2);
+	TCODSystem::setFps(25);
+	TCODMouse::showCursor(true);
+	
 	while (!TCODConsole::isWindowClosed()) {
 		TCODConsole::root->clear();
 		TCODConsole::flush();
