@@ -1,15 +1,17 @@
 #include "./Headers/Engine.h"
-#include "./Managers/Headers/EntityManager.h"
 #include <memory>
 #include <iostream>
 #include <cstdio>
 
 int Engine::xRes = 100;
 int Engine::yRes = 50;
-int actorCount = 0;
+
 int playerX = 40;
 int playerY = 25;
+
 int entityCounter = 0;
+
+// System movementSystem;
 
 Engine::Engine()
 {
@@ -21,12 +23,17 @@ Engine::~Engine()
 
 }
 
+void Engine::Update() {
+
+}
+
 int Engine::Init()
 {
 	TCODConsole::initRoot(xRes, yRes, "Arrowhead", false);
-	EntityManager em;
 	em.addActor(Actor(entityCounter++));
-	int playerID = em.getLatest()->getComponentID();
+	int playerID = em.getLatest()->getComponentID()
+
+
 
 	while (!TCODConsole::isWindowClosed()) {
 		TCOD_key_t key;
@@ -34,6 +41,7 @@ int Engine::Init()
 		switch(key.vk) {
 			case TCODK_UP: 
 				//create motion transform event
+				//movementSystem will handle it
 				playerY--;
 				
 				break;
