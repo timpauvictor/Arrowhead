@@ -1,5 +1,10 @@
 #include "./Headers/TransformComponent.h"
 
+TransformComponent::TransformComponent(int in_ownerID, int in_componentID, Coordinate in_coords) 
+    : Component(in_ownerID, in_componentID)
+{
+    coords = in_coords;
+};
 
 int TransformComponent::getXCoord()
 {
