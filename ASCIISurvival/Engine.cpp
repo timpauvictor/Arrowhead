@@ -31,7 +31,10 @@ int Engine::Init()
 	em.addActor(Actor(componentCounter++));
 	int playerID = em.getLatest()->getComponentID();
 	tm.addComponent(TransformComponent(playerID, componentCounter++));
+
 	
+	mm.addComponent(MotionComponent(playerID, componentCounter++));
+
 
 
 	while (!TCODConsole::isWindowClosed()) {

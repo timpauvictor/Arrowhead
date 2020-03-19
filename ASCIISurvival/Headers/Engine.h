@@ -2,6 +2,7 @@
 #include "../include/libtcod.hpp"
 #include "./Managers/Headers/EntityManager.h"
 #include "./Managers/Headers/TransformManager.h"
+#include "./Managers/Headers/MotionManager.h"
 #include <vector>
 
 class Engine
@@ -16,4 +17,5 @@ class Engine
 	private:
 		EntityManager em;
 		TransformManager tm;
+		MotionManager mm;
 };

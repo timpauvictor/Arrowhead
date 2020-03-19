@@ -2,14 +2,15 @@
 #include "Component.h"
 #include "../../Utils/Headers/Coordinate.h"
 
-class MotionComponent
+class MotionComponent: public Component
 {
     private:
         Coordinate motionVector;
 
     public:
-        MotionComponent(int, int);
-        MotionComponent(Coordinate);
-        MotionComponent();
+        void setVector(int, int);
+        void setVector(Coordinate);
+
+        Coordinate getVector();
 };
 

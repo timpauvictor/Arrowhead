@@ -1,16 +1,11 @@
 #include "./Headers/MotionComponent.h"
 
-MotionComponent::MotionComponent(int in_X, int in_Y)
+void MotionComponent::setVector(int inX, int inY)
 {
-    motionVector = Coordinate(in_X, in_Y);
+    motionVector = Coordinate(inX, inY);
 };
 
-MotionComponent::MotionComponent(Coordinate in_motionVector)
+void MotionComponent::setVector(Coordinate in_coords)
 {
-    motionVector = in_motionVector;
-};
-
-MotionComponent::MotionComponent()
-{
-    motionVector = Coordinate(0, 0);
-};
+    motionVector = in_coords;
+}
