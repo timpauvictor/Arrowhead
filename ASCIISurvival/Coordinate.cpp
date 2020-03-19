@@ -6,6 +6,12 @@ Coordinate::Coordinate(int in_X, int in_Y)
     Y = in_Y;
 };
 
+Coordinate::Coordinate()
+{
+    X = 0;
+    Y = 0;
+};
+
 int Coordinate::getX()
 {
     return X;
