@@ -60,8 +60,11 @@
     <ClInclude Include="./Managers/Headers/Manager.h">
       <Filter>Header Files\Managers</Filter>
     </ClInclude>
-    <ClInclude Include="TransformManager.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="./Managers/Headers/MotionManager.h">
+      <Filter>Header Files\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="./Managers/Headers/TransformManager.h">
+      <Filter>Header Files\Managers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -107,8 +110,11 @@
     <ClCompile Include="./Managers/Manager.cpp">
       <Filter>Source Files\Managers</Filter>
     </ClCompile>
-    <ClCompile Include="TransformManager.cpp">
+    <ClCompile Include="./Managers/TransformManager.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="./Managers/MotionManager.cpp">
+      <Filter>Source Files\Managers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

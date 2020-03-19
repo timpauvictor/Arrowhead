@@ -11,8 +11,6 @@ int playerY = 25;
 
 int componentCounter = 0;
 
-// System movementSystem;
-
 Engine::Engine()
 {
 	
@@ -33,6 +31,7 @@ int Engine::Init()
 	em.addActor(Actor(componentCounter++));
 	int playerID = em.getLatest()->getComponentID();
 	tm.addComponent(TransformComponent(playerID, componentCounter++));
+	
 
 
 	while (!TCODConsole::isWindowClosed()) {
