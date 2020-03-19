@@ -7,6 +7,7 @@ class Component
 
     public:
         Component(int, int);
+        Component(int);
 
         int getComponentID();
         void setComponentID(int in_newID);

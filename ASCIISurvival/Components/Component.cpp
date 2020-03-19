@@ -6,6 +6,12 @@ Component::Component(int in_ownerID, int in_componentID)
     componentID = in_componentID;
 };
 
+Component::Component(int in_componentID)
+{
+    ownerID = -1;
+    componentID = in_componentID;
+}
+
 int Component::getComponentID()
 {
     return componentID;
