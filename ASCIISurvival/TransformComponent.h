@@ -1,5 +1,6 @@
 #pragma once
 #include "Component.h"
+#include "Coordinate.h"
 
 class TransformComponent : public Component
 {
@@ -8,7 +9,8 @@ class TransformComponent : public Component
         int yCoord;
     
     public:
-        TransformComponent();
+        TransformComponent(int, int);
+        TransformComponent(Coordinate);
         int getXCoord();
         int getYCoord();
         //Coordinate getCoordinates();
