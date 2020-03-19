@@ -28,3 +28,8 @@ Coordinate TransformComponent::getCoordinates()
 {
     return coords;
 }
+
+void TransformComponent::setCoordinates(Coordinate in_coords)
+{
+    coords = in_coords;
+}
