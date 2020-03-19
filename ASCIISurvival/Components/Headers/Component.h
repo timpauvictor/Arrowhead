@@ -6,7 +6,7 @@ class Component
         int ownerID;
 
     public:
-        Component(int);
+        Component(int, int);
 
         int getComponentID();
         void setComponentID(int in_newID);

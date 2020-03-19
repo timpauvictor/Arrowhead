@@ -1,8 +1,9 @@
 #include "./Headers/Component.h"
 
-Component::Component(int in_ownerID) 
+Component::Component(int in_ownerID, int in_componentID)
 {
     ownerID = in_ownerID;
+    componentID = in_componentID;
 };
 
 int Component::getComponentID()
@@ -14,3 +15,9 @@ int Component::getOwnerID()
 {
     return ownerID;
 }
+
+void Component::setComponentID(int in_newID)
+{
+    componentID = in_newID;
+};
+
