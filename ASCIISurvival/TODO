@@ -5,7 +5,7 @@ Todo:
 Notes:
   - The player is like a special actor
     - When a movement button is pressed everything that has a joystick component moves
-  - Player needs following component before branch close:
+  - Player needs following component before ECS branch close:
     - Transform: Has a position in the world
     - Motion: Can have a motion vector
     - Graphics: Should display on screen
