@@ -1,0 +1,14 @@
+
+Todo:
+  ☐ Convert actor display and movement to ECS
+
+Notes:
+  - The player is like a special actor
+    - When a movement button is pressed everything that has a joystick component moves
+  - Player needs following component before branch close:
+    - Transform: Has a position in the world
+    - Motion: Can have a motion vector
+    - Graphics: Should display on screen
+    - Collision: Collides with other entitites
+    - Health: Has health and can take damage
+    - Joystick: Should move based on arrow keys
