@@ -2,7 +2,7 @@
 
 int Manager::getSize()
 {
-    return container.size();
+    return static_cast<int>(container.size());
 };
 
 void Manager::addComponent(Component in_newComponent)
@@ -26,6 +26,7 @@ Component* Manager::findByID(int ID)
             return currentElement;
         }
     }
+    return findByIndex(0);
 }
 
 Component* Manager::getLatest()
