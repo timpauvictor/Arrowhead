@@ -33,13 +33,13 @@
     <ClInclude Include="Actor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Component.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TransformComponent.h">
+    <ClInclude Include="./Components/Headers/Component.h">
       <Filter>Header Files\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Coordinate.h">
+    <ClInclude Include="./Components/Headers/TransformComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="./Utils/Headers/Coordinate.h">
       <Filter>Header Files\Utils</Filter>
     </ClInclude>
   </ItemGroup>
@@ -53,13 +53,13 @@
     <ClCompile Include="Actor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Component.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TransformComponent.cpp">
+    <ClCompile Include="./Components/Component.cpp">
       <Filter>Source Files\Components</Filter>
     </ClCompile>
-    <ClCompile Include="Coordinate.cpp">
+    <ClCompile Include="./Components/TransformComponent.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="./Utils/Coordinate.cpp">
       <Filter>Source Files\Utils</Filter>
     </ClCompile>
   </ItemGroup>
