@@ -9,6 +9,6 @@ public:
 	static int yRes;
 	Engine();
 	~Engine();
-	void Init();
+	int Init();
 private:
 };

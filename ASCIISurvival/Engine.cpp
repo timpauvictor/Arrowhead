@@ -17,11 +17,15 @@ Engine::~Engine()
 
 }
 
-void Engine::Init()
+int Engine::Init()
 {
-	TCODConsole::initRoot(xRes, yRes, "ASCII Survival Game", false);
+	TCODConsole::initRoot(xRes, yRes, "Arrowhead", false);
 	while (!TCODConsole::isWindowClosed()) {
+		TCOD_key_t key;
+		TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS, &key, NULL);
 		TCODConsole::root->clear();
+		TCODConsole::root->putChar(40, 25, '@');
 		TCODConsole::flush();
 	}
+	return 0;
 }
