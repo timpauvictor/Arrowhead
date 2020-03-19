@@ -1,7 +1,8 @@
 #pragma once
 #include "./Headers/Manager.h"
+#include "../Components/Headers/TransformComponent.h"
 
-class TransformManager
+class TransformManager: public Manager
 {
 };
 

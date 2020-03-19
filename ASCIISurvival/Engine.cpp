@@ -9,7 +9,7 @@ int Engine::yRes = 50;
 int playerX = 40;
 int playerY = 25;
 
-int entityCounter = 0;
+int componentCounter = 0;
 
 // System movementSystem;
 
@@ -30,8 +30,9 @@ void Engine::Update() {
 int Engine::Init()
 {
 	TCODConsole::initRoot(xRes, yRes, "Arrowhead", false);
-	em.addActor(Actor(entityCounter++));
+	em.addActor(Actor(componentCounter++));
 	int playerID = em.getLatest()->getComponentID();
+	tm.addComponent(TransformComponent(playerID, componentCounter++));
 
 
 	while (!TCODConsole::isWindowClosed()) {

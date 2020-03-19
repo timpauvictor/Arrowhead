@@ -1,6 +1,7 @@
 #pragma once
 #include "../include/libtcod.hpp"
 #include "./Managers/Headers/EntityManager.h"
+#include "./Managers/Headers/TransformManager.h"
 #include <vector>
 
 class Engine
@@ -14,4 +15,5 @@ class Engine
 		void Update();
 	private:
 		EntityManager em;
+		TransformManager tm;
 };
