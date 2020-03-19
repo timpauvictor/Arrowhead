@@ -134,6 +134,8 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="./Components/TransformComponent.cpp" />
     <ClCompile Include="./Components/MotionComponent.cpp" />
+    <ClCompile Include="./Handlers/MotionTransformHandler.cpp" />
+    <ClCompile Include="./Handlers/Handler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
@@ -142,6 +144,8 @@
     <ClInclude Include="Engine.h" />
     <ClInclude Include="./Components/Headers/TransformComponent.h" />
     <ClCompile Include="./Components/Headers/MotionComponent.h" />
+    <ClCompile Include="./Handlers/Headers/MotionTransformHandler.h" />
+    <ClCompile Include="./Handlers/Headers/Handler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
