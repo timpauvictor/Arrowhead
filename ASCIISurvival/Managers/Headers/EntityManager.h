@@ -8,6 +8,7 @@ class EntityManager
         std::vector<Actor> container;
 
     public:
+        EntityManager();
         int getSize();
         void addActor(Actor);
         Actor getIndex(int in_index);

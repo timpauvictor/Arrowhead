@@ -26,7 +26,7 @@ int Engine::Init()
 	TCODConsole::initRoot(xRes, yRes, "Arrowhead", false);
 	EntityManager em;
 	em.addActor(Actor(entityCounter++));
-	int playerID = em.getIndex(0).getID()
+	int playerID = em.getIndex(0).getID();
 
 	while (!TCODConsole::isWindowClosed()) {
 		TCOD_key_t key;
@@ -41,7 +41,7 @@ int Engine::Init()
 			case TCODK_LEFT: playerX--; break;
 			case TCODK_RIGHT: playerX++; break;
 			default: break;
-		}
+		};
 		TCODConsole::root->clear();
 		TCODConsole::root->putChar(playerX, playerY, '@');
 		TCODConsole::flush();
