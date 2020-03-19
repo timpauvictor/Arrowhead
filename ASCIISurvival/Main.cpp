@@ -1,6 +1,6 @@
 
 #pragma comment(linker, "/SUBSYSTEM:CONSOLE")
-#include "./Headers/Engine.h"
+#include "Engine.cpp"
 
 int main() {
 	Engine game;

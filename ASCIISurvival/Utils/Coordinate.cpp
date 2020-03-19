@@ -1,4 +1,4 @@
-#include "../Headers/Utils/Coordinate.h"
+#include "./Headers/Coordinate.h"
 
 Coordinate::Coordinate(int in_X, int in_Y) 
 {

@@ -1,4 +1,4 @@
-#include "TransformComponent.h"
+#include "./Headers/TransformComponent.h"
 
 TransformComponent::TransformComponent(int in_X, int in_Y)
 {
