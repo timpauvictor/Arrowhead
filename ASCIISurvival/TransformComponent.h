@@ -5,16 +5,14 @@
 class TransformComponent : public Component
 {
     private:
-        int xCoord;
-        int yCoord;
+        Coordinate coords;
     
     public:
         TransformComponent(int, int);
         TransformComponent(Coordinate);
+        TransformComponent();
         int getXCoord();
         int getYCoord();
-        //Coordinate getCoordinates();
-        void setXCoord(int newX);
-        void setYCoord(int newY);
+        Coordinate getCoordinates();
 };
 
