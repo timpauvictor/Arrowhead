@@ -8,9 +8,6 @@ class TransformComponent : public Component
         Coordinate coords;
     
     public:
-        TransformComponent(int, int);
-        TransformComponent(Coordinate);
-        TransformComponent();
         int getXCoord();
         int getYCoord();
         Coordinate getCoordinates();
