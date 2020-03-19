@@ -8,6 +8,9 @@ class Manager
         std::vector<Component> container;
 
     public:
-        
+        int getSize();
+        void addComponent(Component);
+        Component* findByIndex(int);
+        Component* findByID(int);
 };
 
