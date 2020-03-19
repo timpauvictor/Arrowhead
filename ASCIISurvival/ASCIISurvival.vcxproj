@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="./Components/Actor.cpp" />
     <ClCompile Include="./Components/Component.cpp" />
     <ClCompile Include="./Utils/Coordinate.cpp" />
     <ClCompile Include="Engine.cpp" />
@@ -140,7 +140,7 @@
     <ClCompile Include="./Managers/EntityManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Actor.h" />
+    <ClInclude Include="./Components/Headers/Actor.h" />
     <ClInclude Include="./Components/Headers/Component.h" />
     <ClInclude Include="./Utils/Headers/Coordinate.h" />
     <ClInclude Include="Engine.h" />
