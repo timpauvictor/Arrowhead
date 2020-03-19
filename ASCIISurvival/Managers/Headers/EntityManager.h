@@ -1,19 +1,13 @@
 #pragma once
 #include <vector>
 #include "../Headers/Actor.h"
+#include "Manager.h"
+#include "Component.h"
 
-class EntityManager
+class EntityManager: public Manager
 {
-    private:
-        std::vector<Actor> container;
-
     public:
-        EntityManager();
-        int getSize();
         void addActor(Actor);
-        Actor getIndex(int in_index);
-        Actor getLatest();
-        int find(int);
 };
 
 

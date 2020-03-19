@@ -3,4 +3,6 @@
 
 class Actor: public Component
 {
+    public:
+        Actor(int);
 };

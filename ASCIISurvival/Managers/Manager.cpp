@@ -8,6 +8,7 @@ int Manager::getSize()
 void Manager::addComponent(Component in_newComponent)
 {
     container.push_back(in_newComponent);
+    latest = findByIndex(getSize());
 };
 
 Component* Manager::findByIndex(int index)
@@ -25,4 +26,9 @@ Component* Manager::findByID(int ID)
             return currentElement;
         }
     }
+}
+
+Component* Manager::getLatest()
+{
+    return latest;
 }

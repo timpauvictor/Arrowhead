@@ -26,15 +26,15 @@ int Engine::Init()
 	TCODConsole::initRoot(xRes, yRes, "Arrowhead", false);
 	EntityManager em;
 	em.addActor(Actor(entityCounter++));
-	int playerID = em.getIndex(0).getID();
+	int playerID = em.getLatest()->getComponentID();
 
 	while (!TCODConsole::isWindowClosed()) {
 		TCOD_key_t key;
 		TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS, &key, NULL);
 		switch(key.vk) {
 			case TCODK_UP: 
-				playerY--;
 				//create motion transform event
+				playerY--;
 				
 				break;
 			case TCODK_DOWN: playerY++; break;

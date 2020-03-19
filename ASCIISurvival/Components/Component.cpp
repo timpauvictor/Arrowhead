@@ -1,5 +1,11 @@
 #include "./Headers/Component.h"
 
+Component::Component() 
+{
+    ownerID = 0;
+    componentID = 0;
+};
+
 Component::Component(int in_ownerID, int in_componentID)
 {
     ownerID = in_ownerID;
