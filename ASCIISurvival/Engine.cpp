@@ -33,6 +33,7 @@ int Engine::Init()
 	em.addActor(Actor(entityCounter++));
 	int playerID = em.getLatest()->getComponentID();
 
+	
 
 
 	while (!TCODConsole::isWindowClosed()) {
