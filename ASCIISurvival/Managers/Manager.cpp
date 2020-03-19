@@ -2,7 +2,7 @@
 
 int Manager::getSize()
 {
-    return container.size;
+    return container.size();
 };
 
 void Manager::addComponent(Component in_newComponent)

@@ -1,8 +1,7 @@
 #pragma once
 #include <vector>
-#include "../Headers/Actor.h"
+#include "../Components/Headers/Actor.h"
 #include "Manager.h"
-#include "Component.h"
 
 class EntityManager: public Manager
 {
