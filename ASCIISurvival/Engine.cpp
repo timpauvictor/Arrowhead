@@ -31,7 +31,7 @@ int Engine::Init()
 {
 	TCODConsole::initRoot(xRes, yRes, "Arrowhead", false);
 	em.addActor(Actor(entityCounter++));
-	int playerID = em.getLatest()->getComponentID()
+	int playerID = em.getLatest()->getComponentID();
 
 
 
