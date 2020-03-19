@@ -25,6 +25,18 @@
     <Filter Include="Header Files\Utils">
       <UniqueIdentifier>{e6b93a99-8b8f-444e-9896-dfd6f6e41934}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Handlers">
+      <UniqueIdentifier>{5f9918a6-f31e-4db2-95db-739574ee1495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Handlers">
+      <UniqueIdentifier>{46a32c8d-1d9c-4409-9b9e-9d13e758587e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managers">
+      <UniqueIdentifier>{22b0edc1-e656-4c76-81a1-617f51774dcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Managers">
+      <UniqueIdentifier>{ef89a2d5-f3c4-423a-8caf-ffe7faddda1e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h">
@@ -42,10 +54,10 @@
     <ClInclude Include="./Utils/Headers/Coordinate.h">
       <Filter>Header Files\Utils</Filter>
     </ClInclude>
-    <ClInclude Include="MotionTransformHandler.h">
+    <ClInclude Include="Manager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Handler.h">
+    <ClInclude Include="EntityManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,10 +86,22 @@
     <ClCompile Include="./Components/MotionComponent.cpp">
       <Filter>Source Files\Components</Filter>
     </ClCompile>
-    <ClCompile Include="MotionTransformHandler.cpp">
+    <ClCompile Include="./Handlers/Handler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="./Handlers/MotionTransformHandler.cpp">
+      <Filter>Source Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="./Handlers/Headers/Handler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="./Handlers/Headers/MotionTransformHandler.h">
+      <Filter>Header Files\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Handler.cpp">
+    <ClCompile Include="EntityManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

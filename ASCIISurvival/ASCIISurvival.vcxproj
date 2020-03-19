@@ -136,6 +136,8 @@
     <ClCompile Include="./Components/MotionComponent.cpp" />
     <ClCompile Include="./Handlers/MotionTransformHandler.cpp" />
     <ClCompile Include="./Handlers/Handler.cpp" />
+    <ClCompile Include="./Managers/Manager.cpp" />
+    <ClCompile Include="./Managers/EntityManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
@@ -146,6 +148,8 @@
     <ClCompile Include="./Components/Headers/MotionComponent.h" />
     <ClCompile Include="./Handlers/Headers/MotionTransformHandler.h" />
     <ClCompile Include="./Handlers/Headers/Handler.h" />
+    <ClInclude Include="./Managers/Headers/EntityManager.h" />
+    <ClInclude Include="./Managers/Headers/Manager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

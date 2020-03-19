@@ -3,9 +3,14 @@ class Component
 {
     private:
         int componentID;
+        int ownerID;
 
     public:
-        int getID();
-        void setID(int in_newID);
+        Component(int);
+
+        int getComponentID();
+        void setComponentID(int in_newID);
+
+        int getOwnerID();
 };
 
