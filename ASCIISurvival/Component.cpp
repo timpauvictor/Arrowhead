@@ -1,1 +1,2 @@
-#include "Component.h"
+#include "./Headers/Components/Component.h"
+
