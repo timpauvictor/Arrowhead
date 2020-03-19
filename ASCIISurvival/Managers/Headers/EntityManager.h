@@ -10,7 +10,9 @@ class EntityManager
     public:
         int getSize();
         void addActor(Actor);
-        Actor getIndex();
+        Actor getIndex(int in_index);
+        Actor getLatest();
         int find(int);
 };
+
 
