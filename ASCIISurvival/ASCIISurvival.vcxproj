@@ -133,6 +133,7 @@
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="./Components/TransformComponent.cpp" />
+    <ClCompile Include="./Components/MotionComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="./Utils/Headers/Coordinate.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="./Components/Headers/TransformComponent.h" />
+    <ClCompile Include="./Components/Headers/MotionComponent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
