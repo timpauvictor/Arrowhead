@@ -23,4 +23,6 @@ class Engine
 		TransformManager tm;
 		MotionManager mm;
 
+		MotionTransformHandler MotionTrans;
+
 };

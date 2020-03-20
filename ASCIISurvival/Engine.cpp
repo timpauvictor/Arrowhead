@@ -22,7 +22,7 @@ Engine::~Engine()
 }
 
 void Engine::Update() {
-
+	
 }
 
 int Engine::Init()
@@ -31,12 +31,16 @@ int Engine::Init()
 	em.addActor(Actor(componentCounter++));
 	int playerID = em.getLatest()->getComponentID();
 	
+
 	tm.addComponent(TransformComponent(playerID, componentCounter++, Coordinate(0, 0)));
+	
 	mm.addComponent(MotionComponent(playerID, componentCounter++, Coordinate(1, 1)));
 
 	
 
 	while (!TCODConsole::isWindowClosed()) {
+		Update();
+
 		TCOD_key_t key;
 		TCODSystem::checkForEvent(TCOD_EVENT_KEY_PRESS, &key, NULL);
 		switch(key.vk) {
