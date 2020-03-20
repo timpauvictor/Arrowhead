@@ -23,6 +23,14 @@ Engine::~Engine()
 
 void Engine::Update() {
 	//MotionSystem.tick()
+		//what happens here?
+			//iterate through all handles owned by MotionTransformHandler
+			//Look for all non-zero motion vectors
+			//if non-zero motion vector found: add the vector to the matching TransformManager 
+			//share updated location with graphicsManager (through the GraphicsTransformHandler)
+
+	//GraphicsSystem.tick()
+		//iterate through all 
 }
 
 int Engine::Init()
