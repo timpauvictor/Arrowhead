@@ -94,7 +94,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>libtcod.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\vtimpau\source\repos\Arrowhead\include\msvs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>F:\Source\Arrowhead\include\msvs;C:\Users\vtimpau\source\repos\Arrowhead\include\msvs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
