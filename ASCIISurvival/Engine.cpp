@@ -22,7 +22,7 @@ Engine::~Engine()
 }
 
 void Engine::Update() {
-	
+		
 }
 
 int Engine::Init()
@@ -33,7 +33,6 @@ int Engine::Init()
 	
 
 	tm.addComponent(TransformComponent(playerID, componentCounter++, Coordinate(0, 0)));
-	
 	mm.addComponent(MotionComponent(playerID, componentCounter++, Coordinate(1, 1)));
 
 	

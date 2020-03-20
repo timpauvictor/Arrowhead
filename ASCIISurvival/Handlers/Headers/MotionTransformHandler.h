@@ -1,5 +1,7 @@
 #pragma once
-class MotionTransformHandler
+#include "Handler.h"
+
+class MotionTransformHandler: public Handler
 {
     
 };

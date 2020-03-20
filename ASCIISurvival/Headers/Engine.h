@@ -5,7 +5,7 @@
 #include "./Managers/Headers/TransformManager.h"
 #include "./Managers/Headers/MotionManager.h"
 
-#include "./Handlers/Headers/MotionTransformHandler.h"
+#include "./Handlers/Headers/Handler.h"
 
 #include <vector>
 
@@ -23,6 +23,6 @@ class Engine
 		TransformManager tm;
 		MotionManager mm;
 
-		MotionTransformHandler MotionTrans;
+		Handler MotionTransformHandler;
 
 };
