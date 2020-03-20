@@ -1,11 +1,17 @@
 #include "./Headers/MotionComponent.h"
 
-void MotionComponent::setVector(int inX, int inY)
+MotionComponent::MotionComponent(int in_ownerID, int in_componentID, Coordinate in_coords)
+    : Component(in_ownerID, in_componentID)
 {
-    motionVector = Coordinate(inX, inY);
-};
+    motionVector = in_coords;
+}
 
 void MotionComponent::setVector(Coordinate in_coords)
 {
     motionVector = in_coords;
+}
+
+Coordinate MotionComponent::getVector()
+{
+    return motionVector;
 }

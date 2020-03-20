@@ -8,7 +8,7 @@ class MotionComponent: public Component
         Coordinate motionVector;
 
     public:
-        void setVector(int, int);
+        MotionComponent(int, int, Coordinate);
         void setVector(Coordinate);
 
         Coordinate getVector();

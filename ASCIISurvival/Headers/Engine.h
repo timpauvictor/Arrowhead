@@ -1,8 +1,12 @@
 #pragma once
 #include "../include/libtcod.hpp"
+
 #include "./Managers/Headers/EntityManager.h"
 #include "./Managers/Headers/TransformManager.h"
 #include "./Managers/Headers/MotionManager.h"
+
+#include "./Handlers/Headers/MotionTransformHandler.h"
+
 #include <vector>
 
 class Engine
@@ -18,4 +22,5 @@ class Engine
 		EntityManager em;
 		TransformManager tm;
 		MotionManager mm;
+
 };
