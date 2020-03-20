@@ -22,7 +22,7 @@ Engine::~Engine()
 }
 
 void Engine::Update() {
-		
+	//MotionSystem.tick()
 }
 
 int Engine::Init()
@@ -31,9 +31,18 @@ int Engine::Init()
 	em.addActor(Actor(componentCounter++));
 	int playerID = em.getLatest()->getComponentID();
 	
+	TransformComponent newTM(playerID, componentCounter++, Coordinate(0, 0));
+
 
 	tm.addComponent(TransformComponent(playerID, componentCounter++, Coordinate(0, 0)));
 	mm.addComponent(MotionComponent(playerID, componentCounter++, Coordinate(1, 1)));
+
+	HandlerComponent newHandle = {
+		playerID,
+		mm.getLatest()->getComponentID,
+		tm.getLatest()->getComponentID
+	};
+	MotionTransformHandler.add(newHandle);
 
 	
 

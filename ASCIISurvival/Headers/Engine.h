@@ -23,6 +23,7 @@ class Engine
 		TransformManager tm;
 		MotionManager mm;
 
-		Handler MotionTransformHandler;
+		Handler MotionTransformHandler; //keeps track of all IDs that have motion and transform
+										//this is needed by the motionSystem (as that handles all interactions between motion and transform elements)
 
 };

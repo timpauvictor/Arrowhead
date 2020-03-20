@@ -5,11 +5,11 @@ Handler::Handler()
     //do nothing
 };
 
-int Handler::findByIndex(int index) {
-    return matchingID.at(index);
+HandlerComponent Handler::findByIndex(int index) {
+    return matchingElements.at(index);
 };
 
-void Handler::add(int in_ID)
+void Handler::add(HandlerComponent in_handle)
 {
-    matchingID.push_back(in_ID);
+    matchingElements.push_back(in_handle);
 };
