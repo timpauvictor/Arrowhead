@@ -51,8 +51,8 @@ int Engine::Init()
 
 	HandlerComponent newHandle = {
 		playerID,
-		mm.getLatest()->getComponentID,
-		tm.getLatest()->getComponentID
+		mm.getLatest()->getComponentID(),
+		tm.getLatest()->getComponentID()
 	};
 	MotionTransformHandler.add(newHandle);
 
